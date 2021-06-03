@@ -1,0 +1,77 @@
+#app {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 100%;
+}
+#check {
+    margin-bottom: -30px;
+    position: relative;
+    left: 12%;
+}
+#title {
+    font-size: 48px;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin: 0;
+}
+#facilita{
+    font-weight:bold;
+}
+#subTitle {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0;
+}
+#logoInterprise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2693FF;
+    width: 624px;
+    height: 877px;
+    margin: 0;
+}
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 70%;
+    height: 877px;
+}
+.form {
+    display: block;
+    width: 368px;
+}
+.input{
+    width: 368px;
+    height: 55px;
+
+    background: #FFFFFF;
+    border: 2px solid #2693FF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 4%;
+    font-size: 20px;
+}
+label {
+    color: #4E657B;
+}
+button {
+    width: 368px;
+    height: 55px;
+
+    background: #1AD18F;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-bottom: 15%;
+}
+
+@media (max-width: 600px) {
+    #logoInterprise {
+        background-color: red;
+    }
+    #login {
+        background-color: red;
+    }
+}
