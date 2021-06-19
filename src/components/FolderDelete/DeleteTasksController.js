@@ -6,14 +6,17 @@ export default {
       }
     },
     props: {
-        Modal: Boolean
+        TaskId: Number
     },
     created(){
-        this.showModal = this.Modal
     },
     methods: {
         fecharModal() {
-            this.$emit("FecharModal")
+            this.$emit("FecharModalDelete")
+        },
+        deleteTasks(){
+            localStorage.removeItem(this.TaskId);
+            this.$emit("FecharModalDeleteAvisar")
         }
-    }, 
+    }
 }

@@ -10,10 +10,10 @@
             <textarea v-model="description" name="" id="" cols="30" rows="10"></textarea>
         </div>
         <div id="buttons">
-            <input type="checkbox" id="Urgente" value="Urgente" v-model="urgence">
+            <input type="radio" id="Urgente" value="Urgente" v-model="urgence">
             <label for="Urgente">Urgente</label>
 
-            <input style="margin-left: 15px" type="checkbox" id="Importante" value="Importante" v-model="urgence">
+            <input style="margin-left: 15px" type="radio" id="Importante" value="Importante" v-model="urgence">
             <label for="Importante">Importante</label>
 
             <button @click="addTasks(name, description, urgence)">Adicionar</button>
@@ -33,13 +33,14 @@
         background-color: rgba(0, 0, 0, 0.5);
     }
     .modal_content {
+        display: block;
         background-color: white ;
         width: 660px;
         height: 450px;
         padding: 10px;
     }
     div {
-        width: 100%;
+        width: 95%;
         padding: 1rem;
     }
     input[type=text] {
@@ -65,5 +66,33 @@
         background: #A6C1D2;
         border-radius: 4px;
         margin-left: 50%;
+    }
+
+    @media (max-width: 952px) {
+        #app {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 5% 5% 5% 5%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal_content {
+            display: block;
+            background-color: white ;
+            width: 300px;
+            height: 450px;
+            padding: 10px;
+        }
+        button {
+            width: 118.31px;
+            height: 47px;
+
+            background: #A6C1D2;
+            border-radius: 4px;
+            margin-left: 5%;
+        }
+
     }
 </style>

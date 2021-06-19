@@ -12,19 +12,16 @@
             <div class="form">
                 <h3>Entre com seus dados de acesso.</h3><br>
                 <label for="">Nome de usuário ou e-mail:</label><br>
-                <input class="input" type="email"><br>
+                <input v-model="emailOuNome" class="input" type="email"><br>
                 <label for="">Senha:</label><br>
-                <input class="input" type="password"><br>
-                <button>Entrar</button>
+                <input v-model="senha" class="input" type="password"><br>
+                <button @click="login()">Entrar</button>
                 <a href="">Esqueci minha senha</a>
             </div>
         </div>
     </div>
 </template>
-<script>
-export default {
-    Name: 'app'
-}
+<script src="./LoginController.js">
 </script>
 <style scoped>
     #app {
